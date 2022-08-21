@@ -1,0 +1,4 @@
+Restaurant page test
+    selenium chrome https://www.quandoo.de/${locale}/place/steakhaus-angusto-3851 1294x819
+        run scripts/accept_cookies.js
+        check specs/restaurant_page.gspec

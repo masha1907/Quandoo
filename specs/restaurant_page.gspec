@@ -1,0 +1,16 @@
+# This covers Quandoo Restaurant Page Visual Testing
+========================================
+@objects
+ #  guest_amount   xpath         //*[@data-qa="widget-guest-amount-dropdown-selection"]
+    registration   xpath         //div[@id='root']/section/div[3]/div/div[2]/div/div/header/div[3]/div[2]/div/a/
+========================================
+# Validation on desktop resolutions
+@on *
+========================================
+
+    registration:
+        height ~ 176px
+
+= Registration button =
+    registration_button:
+       text is "${i18n.text.registration}"

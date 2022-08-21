@@ -1,17 +1,15 @@
 @@ table languages
-       | locale |
-       | en     |
-       | de     |
-       | it     |
-       | fr     |
-       | nd     |
+        | locale |
+        | en     |
+        | de     |
+        | fi     |
+        | fr     |
+        | it     |
+        | nl     |
 
 @@ parameterized using languages
-
-listing page test for ${locale} languages
-    selenium edge canary https://quandoo.de/${locale}/place/steakhaus-angusto-3851 1280x381
-
-        properties i18n/listing-page-${locale}/.properties
-        check speck/localisation_page.gspec
-
+Listing page test for ${locale} language
+     selenium chrome https://www.quandoo.de/${locale}/place/steakhaus-angusto-3851 1294x819
+        properties i18n/listing-page-${locale}.properties
         run scripts/accept_cookies.js
+        check specs/restaurant_page.gspec
